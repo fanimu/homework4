@@ -10,13 +10,21 @@ for (let i = 0; i < 100; i++) {
   nilai.push(nilairandom(1, 50));
 }
 
-for (let x = 0; x < nilai.length; x++) {
-  if (x % 2 == 0) {
-    genap.push(nilai[x]);
+for (let h in nilai) {
+  if (h % 2 == 0) {
+    genap.push(nilai[h]);
   } else {
-    ganjil.push(nilai[x]);
+    ganjil.push(nilai[h]);
   }
 }
+
+// for (let x = 0; x < nilai.length; x++) {
+//   if (x % 2 == 0) {
+//     genap.push(nilai[x]);
+//   } else {
+//     ganjil.push(nilai[x]);
+//   }
+// }
 
 function nMax(a) {
   for (let i = 0; i < a.length; i++) {
